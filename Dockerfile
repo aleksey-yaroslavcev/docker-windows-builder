@@ -13,4 +13,4 @@ RUN mkdir -p /opt/mxe && \
 #Make toolchain
 USER devel
 RUN cd /opt/mxe && \
-  make -j`nproc` JOBS=2 mingw-w64 gcc openssl glib icu4c MXE_TARGETS=i686-w64-mingw32.shared 
+  make -j`nproc` JOBS=2 mingw-w64 gcc openssl glib MXE_TARGETS=i686-w64-mingw32.shared 
